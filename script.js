@@ -81,63 +81,63 @@ let isPlaying = false;
             
             break;
         case 6:
-            audioPlayer.src = ' song6.mp3'; 
+            audioPlayer.src = 'song6.mp3'; 
             songName.innerText = 'Bucuria mea';
             songArtist.innerText = 'De la Florin';
             songImage.src = 'assets/song6.jpg';
             
             break;
         case 7:
-            audioPlayer.src = ' song7.mp3'; 
+            audioPlayer.src = 'song7.mp3'; 
             songName.innerText = 'My love, my heart';
             songArtist.innerText = 'De la Florin';
             songImage.src = 'assets/song7.jpg';
            
             break;
         case 8:
-            audioPlayer.src = ' song8.mp3'; 
+            audioPlayer.src = 'song8.mp3'; 
             songName.innerText = 'Doar pentru tine';
             songArtist.innerText = 'De la Florin';
             songImage.src = 'assets/song8.jpg';
             
             break;
         case 9:
-            audioPlayer.src = ' song9.mp3'; 
+            audioPlayer.src = 'song9.mp3'; 
             songName.innerText = 'Denisa&Florin';
             songArtist.innerText = 'Noi';
             songImage.src = 'assets/song9.jpg';
            
             break;
         case 10:
-            audioPlayer.src = ' song10.mp3'; 
+            audioPlayer.src = 'song10.mp3'; 
             songName.innerText = 'I think about YOU';
             songArtist.innerText = 'Noi';
             songImage.src = 'assets/song10.jpg';
            
             break;
         case 11:
-            audioPlayer.src = ' song11.mp3'; 
+            audioPlayer.src = 'song11.mp3'; 
             songName.innerText = 'Ne-am îndrăgostit';
             songArtist.innerText = 'Noi';
             songImage.src = 'assets/song11.jpg';
            
             break;
         case 12:
-            audioPlayer.src = ' song12.mp3'; 
+            audioPlayer.src = 'song12.mp3'; 
             songName.innerText = 'Cum ne-am cunoscut';
             songArtist.innerText = 'Noi';
             songImage.src = 'assets/song12.jpg';
            
             break;
         case 13:
-            audioPlayer.src = ' song13.mp3'; 
+            audioPlayer.src = 'song13.mp3'; 
             songName.innerText = 'Mă faci să urlu';
             songArtist.innerText = 'De la Florin';
             songImage.src = 'assets/song13.jpg';
            
             break;
         case 14:
-            audioPlayer.src = ' song14.mp3'; 
+            audioPlayer.src = 'song14.mp3'; 
             songName.innerText = 'Bebelușa';
             songArtist.innerText = 'De la Florin';
             songImage.src = 'assets/song14.jpg';
