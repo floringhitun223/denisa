@@ -50,182 +50,98 @@ let isPlaying = false;
             songName.innerText = 'Te iubesc';
             songArtist.innerText = 'De la Florin';
             songImage.src = 'assets/song1.jpg';
-            document.addEventListener('deviceready', function() {
-                cordova.plugins.notification.local.schedule({
-                    id: 1,                // Unique ID for the notification
-                    title: 'Reda melodia',       // Title of the notification
-                    text: 'Te iubesc!', // Content/message of the notification
-                });
-            });
+           
             break;
         case 2:
-            audioPlayer.src = 'songs/song2.mp3'; 
+            audioPlayer.src = 'song2.mp3'; 
             songName.innerText = 'Gâza mea';
             songArtist.innerText = 'De la Florin';
             songImage.src = 'assets/song2.jpg';
-            document.addEventListener('deviceready', function() {
-                cordova.plugins.notification.local.schedule({
-                    id: 1,                // Unique ID for the notification
-                    title: 'Reda melodia',       // Title of the notification
-                    text: 'Gaza mea!', // Content/message of the notification
-                });
-            });
+            
             break;
         case 3:
-            audioPlayer.src = 'songs/song3.mp3'; 
+            audioPlayer.src = 'song3.mp3'; 
             songName.innerText = 'Denisa mea';
             songArtist.innerText = 'De la Florin';
             songImage.src = 'assets/song3.jpg';
-            document.addEventListener('deviceready', function() {
-                cordova.plugins.notification.local.schedule({
-                    id: 1,                // Unique ID for the notification
-                    title: 'Reda melodia',       // Title of the notification
-                    text: 'Denisa mea!', // Content/message of the notification
-                });
-            });
+           
             break;
         case 4:
-            audioPlayer.src = 'songs/song4.mp3'; 
+            audioPlayer.src = 'song4.mp3'; 
             songName.innerText = 'Denisa din Damideni';
             songArtist.innerText = 'De la Florin';
             songImage.src = 'assets/song4.jpg';
-            document.addEventListener('deviceready', function() {
-                cordova.plugins.notification.local.schedule({
-                    id: 1,                // Unique ID for the notification
-                    title: 'Reda melodia',       // Title of the notification
-                    text: 'Denisa din Damideni', // Content/message of the notification
-                });
-            });
+           
             break;
         case 5:
-            audioPlayer.src = 'songs/song5.mp3'; 
+            audioPlayer.src = 'song5.mp3'; 
             songName.innerText = 'Ne potrivim';
             songArtist.innerText = 'Noi';
             songImage.src = 'assets/song5.jpg';
-            document.addEventListener('deviceready', function() {
-                cordova.plugins.notification.local.schedule({
-                    id: 1,                // Unique ID for the notification
-                    title: 'Reda melodia',       // Title of the notification
-                    text: 'Ne potrivim', // Content/message of the notification
-                });
-            });
+            
             break;
         case 6:
-            audioPlayer.src = 'songs/song6.mp3'; 
+            audioPlayer.src = ' song6.mp3'; 
             songName.innerText = 'Bucuria mea';
             songArtist.innerText = 'De la Florin';
             songImage.src = 'assets/song6.jpg';
-            document.addEventListener('deviceready', function() {
-                cordova.plugins.notification.local.schedule({
-                    id: 1,                // Unique ID for the notification
-                    title: 'Reda melodia',       // Title of the notification
-                    text: 'Bucuria mea', // Content/message of the notification
-                });
-            });
+            
             break;
         case 7:
-            audioPlayer.src = 'songs/song7.mp3'; 
+            audioPlayer.src = ' song7.mp3'; 
             songName.innerText = 'My love, my heart';
             songArtist.innerText = 'De la Florin';
             songImage.src = 'assets/song7.jpg';
-            document.addEventListener('deviceready', function() {
-                cordova.plugins.notification.local.schedule({
-                    id: 1,                // Unique ID for the notification
-                    title: 'Reda melodia',       // Title of the notification
-                    text: 'My love', // Content/message of the notification
-                });
-            });
+           
             break;
         case 8:
-            audioPlayer.src = 'songs/song8.mp3'; 
+            audioPlayer.src = ' song8.mp3'; 
             songName.innerText = 'Doar pentru tine';
             songArtist.innerText = 'De la Florin';
             songImage.src = 'assets/song8.jpg';
-            document.addEventListener('deviceready', function() {
-                cordova.plugins.notification.local.schedule({
-                    id: 1,                // Unique ID for the notification
-                    title: 'Reda melodia',       // Title of the notification
-                    text: 'Doar pentru tine', // Content/message of the notification
-                });
-            });
+            
             break;
         case 9:
-            audioPlayer.src = 'songs/song9.mp3'; 
+            audioPlayer.src = ' song9.mp3'; 
             songName.innerText = 'Denisa&Florin';
             songArtist.innerText = 'Noi';
             songImage.src = 'assets/song9.jpg';
-            document.addEventListener('deviceready', function() {
-                cordova.plugins.notification.local.schedule({
-                    id: 1,                // Unique ID for the notification
-                    title: 'Reda melodia',       // Title of the notification
-                    text: 'Noi doi', // Content/message of the notification
-                });
-            });
+           
             break;
         case 10:
-            audioPlayer.src = 'songs/song10.mp3'; 
+            audioPlayer.src = ' song10.mp3'; 
             songName.innerText = 'I think about YOU';
             songArtist.innerText = 'Noi';
             songImage.src = 'assets/song10.jpg';
-            document.addEventListener('deviceready', function() {
-                cordova.plugins.notification.local.schedule({
-                    id: 1,                // Unique ID for the notification
-                    title: 'Reda melodia',       // Title of the notification
-                    text: 'Ma gandesc la tine', // Content/message of the notification
-                });
-            });
+           
             break;
         case 11:
-            audioPlayer.src = 'songs/song11.mp3'; 
+            audioPlayer.src = ' song11.mp3'; 
             songName.innerText = 'Ne-am îndrăgostit';
             songArtist.innerText = 'Noi';
             songImage.src = 'assets/song11.jpg';
-            document.addEventListener('deviceready', function() {
-                cordova.plugins.notification.local.schedule({
-                    id: 1,                // Unique ID for the notification
-                    title: 'Reda melodia',       // Title of the notification
-                    text: 'Ne-am indragostit', // Content/message of the notification
-                });
-            });
+           
             break;
         case 12:
-            audioPlayer.src = 'songs/song12.mp3'; 
+            audioPlayer.src = ' song12.mp3'; 
             songName.innerText = 'Cum ne-am cunoscut';
             songArtist.innerText = 'Noi';
             songImage.src = 'assets/song12.jpg';
-            document.addEventListener('deviceready', function() {
-                cordova.plugins.notification.local.schedule({
-                    id: 1,                // Unique ID for the notification
-                    title: 'Reda melodia',       // Title of the notification
-                    text: 'Cum ne am cunoscut', // Content/message of the notification
-                });
-            });
+           
             break;
         case 13:
-            audioPlayer.src = 'songs/song13.mp3'; 
+            audioPlayer.src = ' song13.mp3'; 
             songName.innerText = 'Mă faci să urlu';
             songArtist.innerText = 'De la Florin';
             songImage.src = 'assets/song13.jpg';
-            document.addEventListener('deviceready', function() {
-                cordova.plugins.notification.local.schedule({
-                    id: 1,                // Unique ID for the notification
-                    title: 'Reda melodia',       // Title of the notification
-                    text: 'Ma faci sa urlu', // Content/message of the notification
-                });
-            });
+           
             break;
         case 14:
-            audioPlayer.src = 'songs/song14.mp3'; 
+            audioPlayer.src = ' song14.mp3'; 
             songName.innerText = 'Bebelușa';
             songArtist.innerText = 'De la Florin';
             songImage.src = 'assets/song14.jpg';
-            document.addEventListener('deviceready', function() {
-                cordova.plugins.notification.local.schedule({
-                    id: 1,                // Unique ID for the notification
-                    title: 'Reda melodia',       // Title of the notification
-                    text: 'Bebelusa', // Content/message of the notification
-                });
-            });
+            
             break;
         default:
             console.log('Song not found');
