@@ -1,0 +1,440 @@
+body{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    user-select: none;
+    padding-top: env(safe-area-inset-top);
+}
+
+.music-list{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: #1b1b1b;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.playlist-back{
+display: flex;
+width: 100%;
+height: 150px;
+justify-content: right;
+img{
+    width: 100%;
+    height: auto;
+    object-fit:cover;
+    filter: blur(1px); /* Blur the image */
+}
+}
+.play{
+    width: 50px;
+    height: 50px;
+    background-color: #ff1a9f;
+    position: absolute;
+    top: 125;
+    right: 20;
+    border: none;
+    border-radius: 100%;
+    z-index: 2;
+    transition: all 0.3s ease;
+    img{
+        width: 25px;
+        height: 25px;
+        transition: all 0.3s ease;
+    };
+}
+h1{
+    display: flex;
+    position: absolute;
+    top: 40;
+    left: 10;
+    color: #ffffff;
+    z-index: 2;
+    font-size: 1.7em;
+    text-shadow: 1px 2px 1px rgba(0, 0, 0, 0.427);
+}
+
+.play:hover{
+    width: 60px;
+    height: 60px;
+    top: 120;
+    right: 15;
+}
+.play:hover img{
+    opacity: 0.8;
+}
+.play:active img{
+    opacity: 1;
+}
+.play:active{
+    width: 50px;
+    height: 50px;
+    top: 125;
+    right: 20;
+}
+h6{
+    display: flex;
+    position: absolute;
+    top: 70;
+    left: 10;
+    color: #ffffff;
+    z-index: 2;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.786);
+}
+.menu{
+    display: flex;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    align-items: center;
+    justify-content: center;
+    background: #25242400;
+    border: none;
+    position: absolute;
+    top: 10;
+    left: 10;
+    transition: all 0.3s ease;
+   box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.404);
+    img{
+        width: 25px;
+        height: 25px;
+        transition: all 0.3s ease;
+    }
+}
+.menu:hover{
+    width: 45px;
+    height: 45px;
+    top: 7.5;
+    left: 7.5;
+    background: #25242490;
+}
+.menu:hover img{
+    opacity: 0.8;
+}
+.menu:active img{
+    opacity: 1;
+}
+.menu:active{
+    width: 40px;
+    height: 40px;
+    top: 10;
+    left: 10;
+}
+.shuffle{
+    width: 50px;
+    height: 50px;
+    background-color: #69696945;
+    position: absolute;
+    top: 125;
+    right: 90;
+    border: none;
+    border-radius: 100%;
+    z-index: 2;
+    transition: all 0.3s ease;
+    img{
+        width: 25px;
+        height: 25px;
+        transition: all 0.3s ease;
+    };
+}
+
+.shuffle:hover{
+    width: 60px;
+    height: 60px;
+    top: 120;
+    right: 85;
+}
+.shuffle:hover img{
+    opacity: 0.8;
+}
+.shuffle:active img{
+    opacity: 1;
+}
+.shuffle:active{
+    width: 50px;
+    height: 50px;
+    top: 125;
+    right: 90;
+}
+.playlist-content{
+    display: block;
+    width: 100%;
+    height: calc(100% - 150px);
+    margin-top: 40px;
+    justify-content: center;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.song{
+    display: flex;
+    width: 100%;
+    padding: 3px;
+    min-height: 50px;
+    height: 50px;
+    align-items: center;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.song:hover{
+    background-color: #2f2f2f;
+}
+.song:active{
+    background-color: #404040;
+}
+.song-image{
+    display: flex;
+    width: 80px;
+    height: 100%;
+    justify-content: center;
+    img{
+        width: 50px;
+        height: auto;
+        object-fit: cover;
+        border-radius: 10px;
+        transition: all 0.3s ease;
+    };
+}
+
+.song-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+.song-title{
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 1em;
+    transition: all 0.3s ease;
+}
+.song-subtitle{
+    color: #7c7c7c;
+    font-weight: 300;
+    font-size: 0.8em;
+    transition: all 0.3s ease;
+}
+.song-duration{
+    display: flex;
+    position: absolute;
+    right: 55;
+    color: #7c7c7c;
+    font-size: 0.8em;
+    transition: all 0.3s ease;
+}
+.more{
+    display: flex;
+    position: absolute;
+    right: 10;
+   align-items: center;
+   justify-content: center;
+    border: none;
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border-radius: 100%;
+    transition: all 0.3s ease;
+    img{
+        width: 15px;
+        transition: all 0.3s ease;
+    };
+}
+.more:hover{
+    background-color: #29292957;
+}
+.player-mini{
+    display: none;
+    width: 95%;
+    height: 90px;
+    background-color: #292929;
+    align-items: center;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    flex-direction: column;
+    transform: scale(0.5); /* Start smaller */
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+.player-play{
+    display: flex;
+    width: 100%;
+    height: calc(100% - 5px);
+    align-items: center;
+    transition: all 0.3s ease;
+}
+.play-image{
+    margin-left: 10px;
+    display: flex;
+    width: 70px;
+    height: 80%;
+    transition: all 0.3s ease;
+    img{
+        width: 50px;
+        height: 50px;
+       border-radius: 10px;
+        object-fit: cover;
+    }
+}
+
+.play-details{
+    display: flex;
+    width: calc(100% - 70px);
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+}
+.play-title{
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 1em;
+    transition: all 0.3s ease;
+    margin-left: 10px;
+}
+.play-subtitle{
+    color: #7c7c7c;
+    font-weight: 300;
+    font-size: 0.8em;
+    transition: all 0.3s ease;
+    margin-left: 10px;
+}
+.play-time{
+    display: flex;
+    width: 100%;
+    height: 5px;
+}
+.progress-back{
+    width: 100%;
+    height: 100%;
+    background-color: #373737;
+    border-radius: 0px 0px 5px 5px;
+}
+.progress{
+    width: 0px;
+    background-color: #ff1a9f;
+    height: 100%;
+    border-radius: 0px 0px 5px 5px;
+    transition: all 0.3s ease;
+}
+.seekf, .seekb{
+    display: flex;
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    background: transparent;
+    border: none;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    border-radius: 100%;
+    img{
+        width: 35px;
+        transition: all 0.3s ease;
+    }
+}
+.pause{
+    display: flex;
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    background: transparent;
+    border: none;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    border-radius: 100%;
+    img{
+        width: 35px;
+        transition: all 0.3s ease;
+    }
+}
+.pause:hover{
+    background-color: #404040;
+    
+}
+.pause:hover img{
+    opacity: 0.3;
+}
+.pause:active{
+    border-radius: 100%;
+   
+}
+.pause:active img{
+    opacity: 1;
+}
+
+
+
+
+
+
+.seekf:hover, .seekb:hover{
+    background-color: #404040;
+    
+}
+.seekf:hover img, .seekb:hover img{
+    opacity: 0.3;
+}
+.seekf:active, .seekb:active{
+    border-radius: 100%;
+   
+}
+.seekf:active img, .seekb:active{
+    opacity: 1;
+}
+/* Style for the scrollbar itself */
+::-webkit-scrollbar {
+    width: 8px;  /* Narrower scrollbar */
+    height: 8px; /* For horizontal scrollbar */
+}
+
+/* Style for the track (background) */
+::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.1);  /* Subtle background color */
+    border-radius: 10px;  /* Smooth rounded corners */
+}
+
+/* Style for the thumb (the draggable part) */
+::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.7);  /* Light thumb for contrast */
+    border-radius: 10px;  /* Smooth rounded corners */
+    transition: background-color 0.3s ease-in-out;  /* Smooth transition */
+}
+
+/* Hover effect for the thumb */
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 1);  /* Darker thumb on hover for better visibility */
+}
+
+/* Horizontal scrollbar styles */
+::-webkit-scrollbar-horizontal {
+    height: 8px;
+}
+
+/* Vertical scrollbar styles */
+::-webkit-scrollbar-vertical {
+    width: 8px;
+}
+
+/* For Firefox */
+* {
+    scrollbar-width: thin;  /* Thin scrollbar for Firefox */
+    scrollbar-color: rgba(255, 255, 255, 0.7) rgba(0, 0, 0, 0.1); /* Thumb and track color */
+}
+
+.time{
+    display: flex;
+    position: absolute;
+    background-color: #1b1b1b72;
+    width: 50px;
+    height: 50px;
+    border-radius: 9px;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    text-shadow: 1px 2px 1px rgba(0, 0, 0, 0.427);
+}
+
+
