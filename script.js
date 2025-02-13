@@ -46,7 +46,7 @@ let isPlaying = false;
     // Set song details based on songId
     switch (songId) {
         case 1:
-            audioPlayer.src = 'songs/song1.mp3'; 
+            audioPlayer.src = 'song1.mp3'; 
             songName.innerText = 'Te iubesc';
             songArtist.innerText = 'De la Florin';
             songImage.src = 'assets/song1.jpg';
