@@ -46,7 +46,7 @@ let isPlaying = false;
     // Set song details based on songId
     switch (songId) {
         case 1:
-            audioPlayer.src = 'https://github.com/floringhitun223/denisa/blob/main/song1.mp3'; 
+            audioPlayer.src = 'https://floringhitun223.github.io/denisa/song1.mp3'; 
             songName.innerText = 'Te iubesc';
             songArtist.innerText = 'De la Florin';
             songImage.src = 'assets/song1.jpg';
