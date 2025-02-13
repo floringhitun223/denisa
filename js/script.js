@@ -1,36 +1,4 @@
 let songPlay = 0;
-if (cordova.platformId === 'android') {
-    cordova.plugins.notification.local.requestPermission(function(granted) {
-        if (granted) {
-            console.log("Notification permission granted");
-        } else {
-            console.log("Notification permission denied");
-        }
-    });
-}
-
-
-document.addEventListener('deviceready', function() {
-    var now = new Date();
-    var triggerTime = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 12, 0, 0);  // Set to 12:00 AM today
-
-    // If the current time is later than the trigger time, set the trigger for the next day
-    if (now.getTime() > triggerTime.getTime()) {
-        triggerTime.setDate(now.getDate() + 1);  // Set to 12:00 AM on the next day
-    }
-
-    // Schedule the daily notification
-    cordova.plugins.notification.local.schedule({
-        id: 1,                          // Unique ID for the notification
-        title: 'Nu uita sa mai asculti ceva bun 🥰',         // Title of the notification
-        text: 'Notificarea ta zilnica sa-ti amintesti!', // Content of the notification
-        trigger: {                        // Trigger the notification every day at 9:00 AM
-            at: triggerTime,               // First notification time (9:00 AM)
-            every: 'day'                   // Repeat every day
-        }
-    });
-});
-
 let audioPlayer = null;
 let isPlaying = false;
 
